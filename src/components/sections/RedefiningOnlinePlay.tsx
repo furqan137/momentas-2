@@ -1,5 +1,5 @@
-import React from "react";
-import SectionBadge from "../ui/SectionBadge";
+// src/components/sections/RedefiningOnlinePlay.tsx
+
 import DashboardImage from "../../assets/Refining-online-play/image.png";
 import Icon1 from "../../assets/Refining-online-play/icons/icon1.png";
 import Icon2 from "../../assets/Refining-online-play/icons/icon2.png";

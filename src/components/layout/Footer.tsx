@@ -1,5 +1,4 @@
 // src/components/layout/Footer.tsx
-import React from "react";
 
 import Logo from "../../assets/logos/Momentas_logo.png";
 

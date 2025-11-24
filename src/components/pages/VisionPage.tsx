@@ -1,5 +1,4 @@
-// src/pages/VisionPage.tsx
-import React from "react";
+// src/components/pages/VisionPage.tsx
 
 import VisionHero from "../../components/vision/VisionHero";
 import VisionRoadmap from "../../components/vision/VisionRoadmap";
