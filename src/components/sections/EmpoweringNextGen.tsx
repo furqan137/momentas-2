@@ -1,5 +1,4 @@
 import React from "react";
-import SectionBadge from "../ui/SectionBadge";
 import LinesCurve from "../../assets/Empowering-future/lines-curve.png";
 
 const EmpoweringNextGen: React.FC = () => {
