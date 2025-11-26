@@ -6,9 +6,12 @@ import MotoGPLogo from "../../assets/Empowering-future/mask-icons.png";
 
 const StrategicPartnerships: React.FC = () => {
   return (
-    <section className="relative bg-white text-slate-900 py-16 sm:py-20 overflow-hidden">
+    <section className="relative w-full bg-white text-slate-900 overflow-hidden">
 
-      <div className="mx-auto max-w-7xl px-6 sm:px-8">
+      {/* TOP LIGHT BORDER (FIGMA MATCH) */}
+      <div className="w-full h-px bg-[#E5E7EB]"></div>
+
+      <div className="mx-auto max-w-7xl px-6 sm:px-8 py-14 sm:py-20">
 
         {/* ============================
             TOP CONTENT
@@ -25,49 +28,51 @@ const StrategicPartnerships: React.FC = () => {
             <h2
               className="
                 mt-6
-                text-[36px] sm:text-[48px] lg:text-[56px]
-                leading-[1.1]
+                text-[38px] sm:text-[52px] lg:text-[58px]
+                leading-[1.05]
                 font-light
                 tracking-tight
               "
             >
-              <span className="bg-gradient-to-r from-[#0D1117] to-[#9B7A8A] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#0D1117] to-[#A18390] bg-clip-text text-transparent">
                 Strategic
               </span>
               <br />
-              <span className="bg-gradient-to-r from-[#0D1117] to-[#9B7A8A] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#0D1117] to-[#A18390] bg-clip-text text-transparent">
                 Partnerships
               </span>
             </h2>
           </div>
 
-          {/* RIGHT — Paragraphs */}
+          {/* RIGHT — Description */}
           <div className="space-y-5 max-w-xl">
-            <p className="text-[18px] text-[#1F2937] leading-relaxed">
+            <p className="text-[20px] text-[#111827] leading-relaxed">
               We collaborate with leading names across fintech, trading, and
               iGaming to create meaningful, results-driven ventures.
             </p>
 
             <p className="text-[15px] text-[#6B7280] leading-relaxed">
               Wherever you see Momentas involved, know that we’re fully committed —
-              building partnerships that inspire innovation, drive growth, and
-              connect with audiences worldwide.
+              building partnerships that inspire innovation, drive growth,
+              and connect with audiences worldwide.
             </p>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="w-full h-px bg-[#E5E7EB] my-10"></div>
+        {/* ============================
+            SPACING + LOGO BORDER LINE
+        ============================= */}
+        <div className="w-full h-px bg-[#E5E7EB] my-14"></div>
 
         {/* ============================
-            PARTNER LOGOS — strip
+            PARTNER LOGOS — STRIP (FIGMA-LIKE)
         ============================= */}
         <div
           className="
             flex flex-wrap items-center 
-            gap-10 sm:gap-20 lg:gap-28 
-            justify-center lg:justify-between
-            opacity-70
+            gap-12 sm:gap-20 lg:gap-28 
+            justify-center
+            opacity-80
           "
         >
           {/* MotoGP */}
@@ -76,10 +81,12 @@ const StrategicPartnerships: React.FC = () => {
             alt="MotoGP"
             className="h-10 sm:h-12 opacity-60"
           />
-
         </div>
-
       </div>
+
+      {/* BOTTOM LIGHT BORDER (FIGMA MATCH) */}
+      <div className="w-full h-px bg-[#E5E7EB]"></div>
+
     </section>
   );
 };
