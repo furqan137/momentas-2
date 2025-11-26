@@ -7,8 +7,8 @@ import Github from "../../assets/Icons/github.png";
 import Twitter from "../../assets/Icons/twitter.png";
 import Instagram from "../../assets/Icons/Vector.png";
 
-// Correct Figma banner background
-import EndBanner from "../../assets/backgrounds/y61.png"
+import EndBanner from "../../assets/backgrounds/y61.png";
+
 const Footer = () => {
   return (
     <footer
@@ -16,15 +16,11 @@ const Footer = () => {
         relative w-full bg-[#050812]
         overflow-visible
         pt-24
-        pb-[450px]   /* enough height to reveal the banner behind */
+        pb-[450px]
       "
     >
-
-      {/* ================================
-          GLASS FOOTER PANEL
-      ================================= */}
+      {/* GLASS FOOTER PANEL */}
       <div className="relative z-[20] max-w-7xl mx-auto px-6">
-
         <div
           className="
             w-full rounded-[30px]
@@ -37,14 +33,13 @@ const Footer = () => {
             gap-14
           "
         >
-
           {/* LEFT SIDE */}
           <div className="flex-1 space-y-8 max-w-lg">
             <img src={Logo} className="h-10 opacity-95" />
 
             <p className="text-slate-300/90 text-[15px] leading-relaxed">
-              Stay ahead of the curve — get the latest in fintech,
-              trading, and iGaming innovation straight to your inbox.
+              Stay ahead of the curve — get the latest in fintech, trading, and
+              iGaming innovation straight to your inbox.
             </p>
 
             {/* Email Input */}
@@ -82,17 +77,36 @@ const Footer = () => {
               ))}
             </div>
 
-            <p className="text-[11px] text-slate-400 leading-relaxed pt-1">
+            {/* COPYRIGHT */}
+            <p className="text-[11px] text-white leading-relaxed pt-1">
               © {new Date().getFullYear()} Momentas Group
+            </p>
+
+            {/* LEGAL DISCLAIMER — UPDATED COLOR */}
+            <p className="text-[12px] text-slate-300/90 leading-relaxed max-w-xl mt-3">
+              Momentas Group Holdings Ltd (“Momentas”) does not offer, endorse,
+              or promote any form of gambling or financial trading to the
+              public. References to affiliated brands, partners, or products are
+              provided for informational and marketing purposes only. Momentas
+              makes no warranties regarding the accuracy or completeness of the
+              information presented on this website. Users should independently
+              verify all information and seek professional advice before
+              engaging with any mentioned products or services.
             </p>
           </div>
 
           {/* RIGHT SIDE LINKS + TAGLINE */}
           <div className="flex-1 flex flex-col justify-between">
-
             {/* Nav Links */}
             <div className="grid grid-cols-2 gap-y-4 gap-x-20 text-[14px] text-slate-200">
-              {["Home", "Innovation", "About", "Careers", "Vision", "Contact"].map((item) => (
+              {[
+                "Home",
+                "Innovation",
+                "About",
+                "Careers",
+                "Vision",
+                "Contact",
+              ].map((item) => (
                 <button key={item} className="hover:text-white transition">
                   {item}
                 </button>
@@ -116,20 +130,15 @@ const Footer = () => {
               </p>
             </div>
           </div>
-
         </div>
       </div>
 
-
-      {/* ================================================
-          FIGMA BANNER — PERFECT POSITION (BEHIND FOOTER)
-      ================================================= */}
+      {/* BACKGROUND BANNER BEHIND FOOTER */}
       <div
         className="
-          absolute
-          left-1/2 -translate-x-1/2   /* center horizontally */
-          top-[80px] sm:top-[150px] md:top-[-135px]  /* move behind */
-          w-[1500px] max-w-none
+          absolute left-1/2 -translate-x-1/2
+          top-[80px] sm:top-[150px] md:top-[10px]
+          w-[1500px]
           pointer-events-none
           z-[5]
         "
@@ -143,7 +152,6 @@ const Footer = () => {
           "
         />
       </div>
-
     </footer>
   );
 };
